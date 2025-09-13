@@ -1,0 +1,52 @@
+/* Ensure component fills remaining space to push footer down */
+:host {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+/* Skills Section */
+.skills {
+  background: #fff;
+  padding: 60px 50px; /* increased padding */
+  border-radius: 12px;
+  margin: 50px auto;
+  max-width: 1000px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.skills h2 {
+  font-size: 2.2rem; /* larger section title */
+  margin-bottom: 35px;
+  color: darkmagenta;
+  border-bottom: 3px solid #4caf50;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Skills Paragraph */
+.skills p {
+  font-size: 1.3rem; /* bigger */
+  line-height: 2;
+  color: #333;
+}
+
+/* Emphasized text */
+.skills strong {
+  color: #8b4513; /* brown */
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills {
+    padding: 35px 25px;
+  }
+  .skills h2 {
+    font-size: 2rem;
+  }
+  .skills p {
+    font-size: 1.05rem;
+  }
+}

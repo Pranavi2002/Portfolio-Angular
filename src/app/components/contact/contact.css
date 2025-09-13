@@ -1,0 +1,87 @@
+/* Ensure component fills remaining space to push footer down */
+:host {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+/* Contact section styling */
+.contact {
+  background: #fff;
+  padding: 60px 50px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Heading */
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 35px;
+  color: darkmagenta;
+  border-bottom: 3px solid #4caf50;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Container for cards */
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Individual contact card */
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f9f9f9;
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.contact-card i {
+  font-size: 1.4rem;
+  color: #4caf50;
+}
+
+/* Hover effect */
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  background: #e8f5e9;
+  color: darkmagenta;
+}
+
+.contact-card:hover i {
+  color: darkmagenta;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .contact-card {
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 12px 20px;
+  }
+  .contact-card i {
+    font-size: 1.3rem;
+  }
+}

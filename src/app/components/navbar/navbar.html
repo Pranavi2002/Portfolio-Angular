@@ -1,0 +1,29 @@
+<header>
+  <nav>
+    <h2 class="logo">Pranavi</h2>
+    <div class="nav-section" id="nav-section">&#9776;</div>
+    <!-- <ul class="nav-links" id="nav-links">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a routerLink="/education" routerLinkActive="active">Education</a></li>
+      <li><a routerLink="/work-experience" routerLinkActive="active">Experience</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+      <li><a routerLink="/technical-skills" routerLinkActive="active">Skills</a></li>
+      <li><a routerLink="/achievements" routerLinkActive="active">Achievements</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul> -->
+
+    <!-- Class Binding using active-->
+    <ul class="nav-links" id="nav-links">
+      <li><a routerLink="/" [class.active]="activeLink === 'home'" (click)="setActive('home')">Home</a></li>
+      <li><a routerLink="/about" [class.active]="activeLink === 'about'" (click)="setActive('about')">About</a></li>
+      <li><a routerLink="/education" [class.active]="activeLink === 'education'" (click)="setActive('education')">Education</a></li>
+      <li><a routerLink="/work-experience" [class.active]="activeLink === 'experience'" (click)="setActive('experience')">Experience</a></li>
+      <li><a routerLink="/projects" [class.active]="activeLink === 'projects'" (click)="setActive('projects')">Projects</a></li>
+      <li><a routerLink="/technical-skills" [class.active]="activeLink === 'skills'" (click)="setActive('skills')">Skills</a></li>
+      <li><a routerLink="/achievements" [class.active]="activeLink === 'achievements'" (click)="setActive('achievements')">Achievements</a></li>
+      <li><a routerLink="/contact" [class.active]="activeLink === 'contact'" (click)="setActive('contact')">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>

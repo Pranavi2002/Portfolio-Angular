@@ -1,0 +1,25 @@
+<section class="projects">
+  <h2>Projects</h2>
+  <div class="project-cards">
+
+    <!-- Angular concept: *ngFor directive to render each project dynamically -->
+    <div class="project-card" *ngFor="let project of projects">
+      <img [src]="project.image" [alt]="project.title"/>
+      <h3>{{ project.title }}</h3>
+      <p class="tech-stack">{{ project.techStack }}</p>
+      <p>{{ project.description }}</p>
+
+      <div class="project-overlay">
+        <div class="overlay-content">
+          <h4>{{ project.overlayTitle }}</h4>
+          <p><strong>Tech Stack:</strong> {{ project.overlayTechStack }}</p>
+          <ul>
+            <li *ngFor="let point of project.overlayPoints">{{ point }}</li>
+          </ul>
+        </div>
+        <a [href]="project.githubLink" target="_blank" class="github-btn">View on GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<section class="experience">
+  <h2>Work Experience</h2>
+  <div class="exp-cards">
+    <div class="exp-card" *ngFor="let exp of experiences$ | async">
+    <h3>{{ exp.title }}</h3>
+    <p><strong>{{ exp.company }}</strong> | {{ exp.duration }}</p>
+    <ul>
+        <li *ngFor="let point of exp.points">{{ point }}</li>
+    </ul>
+    <div class="exp-overlay">
+        <h4>{{ exp.title }}</h4>
+        <p><strong>{{ exp.company }} | {{ exp.duration }}</strong></p>
+        <ul>
+        <li *ngFor="let overlay of exp.overlayPoints">{{ overlay }}</li>
+        </ul>
+        <a *ngIf="exp.github" [href]="exp.github" target="_blank" class="github-btn">View on GitHub</a>
+    </div>
+    </div>
+  </div>
+</section>

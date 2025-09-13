@@ -1,0 +1,174 @@
+:host {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+/* Experience Section */
+.experience {
+  background: #fff;
+  padding: 60px 50px;
+  border-radius: 12px;
+  margin: 50px auto;
+  max-width: 1200px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.experience h2 {
+  font-size: 2.4rem;
+  margin-bottom: 35px;
+  color: darkmagenta;
+  border-bottom: 3px solid #4caf50;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* 🔹 Grid layout: force 2 cards per row on large screens */
+.exp-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Individual experience card */
+.exp-card {
+  position: relative;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  min-height: 220px;
+  overflow: hidden;
+}
+
+.exp-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  cursor: pointer;
+}
+
+/* Titles */
+.exp-card h3 {
+  font-size: 1.5rem;
+  color: coral;
+  margin-bottom: 10px;
+}
+
+.exp-card p {
+  font-size: 1.3rem;
+  color: #5a3e36;
+  margin-bottom: 12px;
+}
+
+/* 🔹 Overlay behaves like modal inside card */
+.exp-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;               /* wider than card content */
+  height: auto;
+  max-height: 80%;          /* scroll if too tall */
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* On hover → show */
+.exp-card:hover .exp-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Overlay content */
+.exp-overlay h4 {
+  color: coral;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.exp-overlay h5 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: darkmagenta;
+}
+
+.exp-overlay p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.exp-overlay ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.exp-overlay li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Scrollbar styling */
+.exp-overlay::-webkit-scrollbar {
+  width: 8px;
+}
+
+.exp-overlay::-webkit-scrollbar-thumb {
+  background: #4caf50;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .exp-cards {
+    grid-template-columns: 1fr 1fr; /* 2 per row */
+  }
+
+  .exp-overlay {
+    width: 100%;
+    max-height: 75%;
+    padding: 18px;
+  }
+}
+
+/* GitHub button inside overlay */
+.github-btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.github-btn:hover {
+  background-color: darkmagenta;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .exp-cards {
+    grid-template-columns: 1fr; /* stack on mobile */
+  }
+
+  .exp-overlay {
+    width: 100%;
+    max-height: 70%;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,20 @@
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px; /* smaller padding */
+  flex-shrink: 0;      /* never shrink in flex layout */
+  font-size: 1.1rem;
+}
+
+/* Social links */
+footer .socials a {
+  color: #4caf50;      /* green links for contrast */
+  margin: 0 8px;
+  text-decoration: none; /* remove underline */
+  transition: color 0.3s;
+}
+
+footer .socials a:hover {
+  color: darkmagenta;   /* hover effect */
+}

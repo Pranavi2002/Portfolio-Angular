@@ -1,0 +1,11 @@
+<section class="achievements">
+  <h2>Achievements & Publications</h2>
+  <div class="achievement-cards">
+    <div class="achievement-card" *ngFor="let achievement of achievements">
+      <h3>{{ achievement.category }}</h3>
+      <ul>
+        <li *ngFor="let item of achievement.items">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

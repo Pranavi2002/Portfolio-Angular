@@ -1,0 +1,55 @@
+/* Ensure component fills remaining space to push footer down */
+:host {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+/* About section styling */
+.about {
+  background: #fff;
+  padding: 60px 50px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12); /* subtle shadow */
+  text-align: left;
+}
+
+/* Heading */
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: darkmagenta;
+  border-bottom: 3px solid #4caf50;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* List styling */
+.about ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.about li {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 20px;
+  }
+  .about h2 {
+    font-size: 1.8rem;
+  }
+  .about li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

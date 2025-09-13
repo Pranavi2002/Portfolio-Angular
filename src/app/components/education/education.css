@@ -1,0 +1,70 @@
+/* Ensure component fills remaining space to push footer down */
+:host {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+/* Education section styling */
+.education {
+  background: #fff;
+  padding: 60px 50px; /* increased padding */
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08); /* slightly stronger shadow */
+  text-align: left;
+}
+
+/* Section heading */
+.education h2 {
+  font-size: 2.2rem; /* slightly larger */
+  margin-bottom: 30px;
+  color: darkmagenta;
+  border-bottom: 3px solid #4caf50;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* List styling */
+.education ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+/* Individual education items */
+.education li {
+  font-size: 1.2rem; /* slightly larger */
+  line-height: 1.9;
+  margin-bottom: 20px;
+  color: #333;
+  background: #f9f9f9;
+  padding: 20px; /* slightly more padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Strong text */
+.education strong {
+  color: #4caf50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .education {
+    padding: 40px 20px;
+  }
+  .education h2 {
+    font-size: 1.8rem;
+  }
+  .education li {
+    font-size: 1.2rem;
+  }
+}

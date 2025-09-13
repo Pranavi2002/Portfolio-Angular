@@ -1,0 +1,21 @@
+<section class="profile">
+  <!-- <div class="profile-pic-container"> -->
+
+    <!-- Class Binding using hovered-->
+    <div 
+      class="profile-pic-container" 
+      [class.hovered]="isHovered"
+      (mouseenter)="isHovered = true" 
+      (mouseleave)="isHovered = false"
+    >
+    <img src="photo.jpg" alt="Profile" class="profile-pic"/>
+  </div>
+  
+  <h1>Hi, I'm <span class="highlight">Venkata Naga Sri Sai Pranavi Kolipaka</span></h1>
+  <p class="tagline">Aspiring Full Stack Developer | Frontend Developer | Data Engineer | Data Analyst</p>
+  <!-- <a href="resume.pdf" class="btn" target="_blank">Download Resume</a> -->
+
+  <!-- Event Binding using button -->
+   <!-- Button styled as a link -->
+  <button class="btn" [class.clicked]="isClicked" (click)="downloadResume()">Download Resume</button>
+</section>
