@@ -1,59 +1,144 @@
-# Portfolio
+# Angular Portfolio – Venkata Naga Sri Sai Pranavi Kolipaka
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
+Welcome to my Angular-based portfolio, showcasing my projects, work experience, achievements, and technical skills. This project demonstrates a modern, responsive, and component-driven Angular application.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🔹 About the Project
 
-```bash
+This portfolio is built with **Angular** and highlights my skills. It features:
+
+- Modular component architecture (Home, Projects, Achievements, Contact)
+- Dynamic rendering of content using services and observables
+- Routing between multiple pages
+- Responsive design with **Bootstrap**
+- Interactive UI with property, event, and class bindings
+
+---
+
+## 🔹 Key Features
+
+- **Home Section:** Profile overview, tagline, and Resume download button 
+- **About Section:** Description about me 
+- **Projects Section:** Detailed portfolio projects with tech stacks, descriptions, and GitHub links  
+- **Work Experience Section:** Professional experiences with detailed achievements  
+- **Achievements Section:** Academic and professional accomplishments 
+- **Technical Skills Section:** Languages, frameworks, databases, and cloud platforms  
+- **Contact Section:** Email, LinkedIn, and GitHub links  
+ 
+---
+
+## 🔹 Technologies Used
+
+- **Frontend:** Angular, HTML, CSS, Bootstrap  
+- **Backend/Services:** Angular Services, Dependency Injection  
+- **Routing:** Angular Router  
+- **Tools:** VS Code, Git, GitHub  
+- **Deployment:** Netlify  
+
+---
+
+## 🔹 Angular Concepts Implemented
+
+- Components & Component Metadata  
+- Property Binding & Event Binding  
+- Class & Style Binding  
+- Structural Directives (`*ngFor`, `*ngIf`)  
+- Services & Dependency Injection  
+- Routing (`routerLink`)  
+- CSS Encapsulation for Component Scoping  
+
+---
+
+## 🔹 Demo
+
+🌐 [View Live Portfolio]https://pranavi-portfolio.netlify.app/
+
+---
+
+## 🔹 Installation & Usage
+
+### Clone the repository
+git clone https://github.com/Pranavi2002/Portfolio-Angular.git
+
+### Navigate to project folder
+cd Portfolio-Angular
+
+### Install dependencies
+npm install
+
+### Run the development server
 ng serve
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+public
+│── images, pdf files… (all the linked items)
+src/services/
+├── work-experience.service.ts
+src/app/
+│── app.ts
+│── app.html
+│── app.css
+│── app.routes.ts
+│
+├── components/
+│   ├── navbar/
+│   │   ├── navbar.ts
+│   │   ├── navbar.html
+│   │   └── navbar.css
+│   │
+│   ├── home/
+│   │   ├── home.ts
+│   │   ├── home.html
+│   │   └── home.css
+│   │
+│   ├── about/
+│   │   ├── about.ts
+│   │   ├── about.html
+│   │   └── about.css
+│   │
+│   ├── education/
+│   │   ├── education.ts
+│   │   ├── education.html
+│   │   └── education.css
+│   │
+│   ├── work-experience/
+│   │   ├── work-experience.ts
+│   │   ├── work-experience.html
+│   │   └── work-experience.css
+│   │
+│   ├── projects/
+│   │   ├── projects.ts
+│   │   ├── projects.html
+│   │   └── projects.css
+│   │
+│   ├── technical-skills/
+│   │   ├── technical-skills.ts
+│   │   ├── technical-skills.html
+│   │   └── technical-skills.css
+│   ├── achievements/
+│   │   ├── achievements.ts
+│   │   ├── achievements.html
+│   │   └── achievements.css
+│   │
+│   ├── contact/
+│   │   ├── contact.ts
+│   │   ├── contact.html
+│   │   └── contact.css
+│   │
+│   ├── footer/
+│       ├── footer.ts
+│       ├── footer.html
+│       └── footer.css
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+## 👩‍💻 Author
+### Pranavi Kolipaka
+Feel free to connect: 
+- [LinkedIn] (https://www.linkedin.com/in/vns-sai-pranavi-kolipaka-489601208/) 
+- [GitHub] (https://github.com/Pranavi2002)
